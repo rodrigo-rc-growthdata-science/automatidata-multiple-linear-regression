@@ -1,12 +1,12 @@
 # automatidata-multiple-linear-regression
 Predictive linear regression model for NYC Yellow Taxi trip fares using Python, Scikit-learn, and Seaborn.
-# 🚕 Automatidata: NYC Taxi Fare Predictive Modeling
+# Automatidata: NYC Taxi Fare Predictive Modeling
 
 A comprehensive end-to-end data science and machine learning project focused on predicting New York City yellow taxi trip fares (`fare_amount`) using Linear Regression, exploratory data analysis (EDA), and advanced feature engineering.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 - [Project Overview](#-project-overview)
 - [Dataset & Tools](#-dataset--tools)
 - [Exploratory Data Analysis & Cleaning](#-exploratory-data-analysis--cleaning)
@@ -17,19 +17,19 @@ A comprehensive end-to-end data science and machine learning project focused on 
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 The main objective of this project is to build a multiple linear regression model that accurately estimates total taxi fares for NYC yellow cab trips based on journey characteristics. By identifying key price drivers, this model assists in providing transparent fare estimates to passengers and optimizing operational fleet management.
 
 ---
 
-## 🛠 Dataset & Tools
+## Dataset & Tools
 * **Dataset:** 20,000+ NYC Yellow Taxi trip records.
 * **Languages & Libraries:** Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy, Statsmodels, Scikit-learn, Missingno).
 * **Workflow:** Data Cleaning $\rightarrow$ EDA $\rightarrow$ Feature Engineering $\rightarrow$ Preprocessing (`StandardScaler`, `OneHotEncoder`) $\rightarrow$ Model Training $\rightarrow$ Residual Diagnostics.
 
 ---
 
-## 🧹 Exploratory Data Analysis & Cleaning
+## Exploratory Data Analysis & Cleaning
 
 ### 1. Data Integrity & Missing Values
 Data quality checks were conducted using the `missingno` library to verify completeness across features.
@@ -58,7 +58,7 @@ We examined relationships between average trip distance, average trip duration, 
 
 ---
 
-## ⚙️ Feature Engineering & Modeling
+## Feature Engineering & Modeling
 
 Key feature enhancements were implemented to improve model predictive capabilities:
 * **`mean_distance` & `mean_duration`:** Calculated average distance and duration grouped by pickup and dropoff locations to represent route baselines.
@@ -73,7 +73,7 @@ Linear relationships were verified, such as `mean_duration` vs `fare_amount`:
 
 ---
 
-## 📊 Model Evaluation & Residual Analysis
+## Model Evaluation & Residual Analysis
 
 The final Linear Regression model achieved high predictive precision. Evaluation was conducted through residual analysis to confirm standard OLS assumptions (linearity, normality, homoscedasticity).
 
@@ -94,14 +94,14 @@ Residuals are centered near zero with a normal distribution. Scatterplots over p
 
 ---
 
-## 💡 Key Business Insights
+## Key Business Insights
 1. **Primary Price Drivers:** Average trip distance ($r = 0.91$) and average duration ($r = 0.86$) are the strongest predictors of total fare amounts.
 2. **Airport Flat Rates:** Flat-rate trips (e.g., JFK Airport transfers via `RatecodeID = 2`) display distinct fare patterns that require specialized categorical encoding.
 3. **Operational Recommendation:** Integrate the model into rider-facing applications for upfront fare quotes and leverage zone-level duration metrics for dynamic fleet dispatching during peak demand periods.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 ```bash
 .
 ├── images/                        # Exported high-resolution visual assets (DPI 300)
